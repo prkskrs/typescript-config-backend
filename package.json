@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "typescript": "^5.3.3"
+  },
+  "name": "typescript-advance-configs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "rimraf": "^5.0.5"
+  },
+  "scripts": {
+    "build": "tsc && npm run lint",
+    "start": "npm run build && node dist/index.js",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix",
+    "clean": "rimraf dist && rimraf ./*.log",
+    "pretest": "npm run lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
